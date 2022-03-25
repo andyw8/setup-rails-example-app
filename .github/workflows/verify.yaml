@@ -4,3 +4,5 @@ on: [push]
 jobs:
   call-workflow-passing-data:
     uses: andyw8/setup-rails/.github/workflows/verify.yml@v1
+    with:
+      brakeman: false
