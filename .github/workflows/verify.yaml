@@ -6,5 +6,3 @@ jobs:
     uses: andyw8/setup-rails/.github/workflows/verify.yml@v1
     with:
       rspec: true
-      # brakeman: true
-      # bundler-audit: true
