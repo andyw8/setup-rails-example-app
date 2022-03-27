@@ -3,6 +3,9 @@ on: [push]
 
 jobs:
   verify:
-    uses: andyw8/setup-rails/.github/workflows/verify.yml@v1
+    # For testing purposes, this uses the latest version of the action on the `main` branch,
+    # but for stability you should use a versioned release, e.g.
+    # uses: andyw8/setup-rails/.github/workflows/verify.yml@v1
+    uses: andyw8/setup-rails/.github/workflows/verify.yml@main
     with:
       rspec: true
