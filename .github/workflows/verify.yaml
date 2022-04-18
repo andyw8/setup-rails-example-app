@@ -1,8 +1,5 @@
-name: Verify
 on: [push]
-
 jobs:
-  name: setup-rails
-  uses: andyw8/setup-rails@v1
-  with:
-    rspec: true
+  verify:
+    name: setup-rails
+    uses: andyw8/setup-rails@v1
