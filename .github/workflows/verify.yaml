@@ -8,4 +8,5 @@ jobs:
     # uses: andyw8/setup-rails/.github/workflows/verify.yml@v1
     uses: andyw8/setup-rails/.github/workflows/verify.yml@main
     with:
+      node-version-file: ".tool-versions"
       rspec: true
