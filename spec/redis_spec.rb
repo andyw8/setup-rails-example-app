@@ -4,6 +4,6 @@ RSpec.describe "Redis check" do
   it "can be created" do
     redis = Redis.new(host: "localhost")
     redis.set("a", 1)
-    redis.get("a")
+    expect(redis.get("a")).to eq("1")
   end
 end
